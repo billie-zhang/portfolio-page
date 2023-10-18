@@ -19,8 +19,8 @@ const Projects = () => {
       title: "Portfolio Website",
       desc: "A personal portfolio website showcasing my professional journey, skills, and accomplishments. The site serves as a comprehensive snapshot of my abilities.",
       lang: "react.js, tailwind CSS",
-      github: "https://github.com/billie-zhang/portfolio-website",
-      link: "",
+      github: "https://github.com/billie-zhang/portfolio",
+      link: "https://billiezhang.vercel.app/",
     },
     {
       id: 2,
