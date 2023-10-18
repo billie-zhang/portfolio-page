@@ -102,7 +102,7 @@ const Experience = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Full Resume
+            Resume
           </a>
         </div>
       </div>

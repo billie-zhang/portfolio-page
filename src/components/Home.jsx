@@ -56,7 +56,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              My Resume
+              Resume
             </a>
             <Link
               to="contact"
@@ -64,7 +64,7 @@ const Home = () => {
               duration={500}
               className="group text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             >
-              Contact Me
+              Contact
               <span className="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-90 duration-300 ml-2 hidden lg:block">
                 <ImArrowRight2 />
               </span>
