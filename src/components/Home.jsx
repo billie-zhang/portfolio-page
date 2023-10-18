@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import hero from "../assets/me3.svg";
 import { ImArrowRight2 } from "react-icons/im";
 import { Link } from "react-scroll";
-import ReactTyped from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,18 +29,24 @@ const Home = () => {
             data-aos="fade"
           >
             I'm{" "}
-            <ReactTyped
-              strings={[
+            <TypeAnimation
+              sequence={[
                 "a developer",
+                1500,
                 "a designer",
+                1500,
                 "a lifelong learner",
+                1500,
                 "an ice cream lover",
+                1500,
                 "a curious mind",
+                1500,
               ]}
-              typeSpeed={100}
-              pause={4000}
-              backSpeed={70}
-              loop
+              wrapper="span"
+              cursor={true}
+              speed={100}
+              deletionSpeed={70}
+              repeat={Infinity}
             />
           </p>
           <div className="py-2" data-aos="zoom-in">
