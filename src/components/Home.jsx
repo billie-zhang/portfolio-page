@@ -45,7 +45,7 @@ const Home = () => {
               wrapper="span"
               cursor={true}
               speed={200}
-              deletionSpeed={70}
+              deletionSpeed={100}
               repeat={Infinity}
             />
           </p>
