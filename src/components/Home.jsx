@@ -1,0 +1,84 @@
+import React, { useEffect } from "react";
+import hero from "../assets/me3.svg";
+import { ImArrowRight2 } from "react-icons/im";
+import { Link } from "react-scroll";
+import ReactTyped from "react-typed";
+import resume from "../assets/BillieZhangResume.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+  return (
+    <div
+      name="home"
+      className="h-screen sm:h-[1000px] md:h-screen bg-almost-black pt-[80px] md:pt-[40px] lg:pt-[100px]"
+    >
+      <div className=" max-w-screen-lg  mx-auto flex flex-col items-center justify-center w-full h-full px-6 md:flex-row">
+        <div className="flex flex-col pt-5 md:pb-10 lg:pb-[70px] w-full h-auto md:h-full justify-center items-center md:items-start">
+          <h1
+            className="font-signature mt-10 md:pt-0 lg:mt-24 py-4 lg:text-6xl text-5xl font-bold text-light-grey"
+            data-aos="fade"
+          >
+            Hi I'm Billie!
+          </h1>
+          <p
+            className="font-signature text-3xl lg:text-4xl my-4 font-medium text-light-grey"
+            data-aos="fade"
+          >
+            I'm{" "}
+            <ReactTyped
+              strings={[
+                "a developer",
+                "a designer",
+                "a lifelong learner",
+                "an ice cream lover",
+                "a curious mind",
+              ]}
+              typeSpeed={100}
+              pause={4000}
+              backSpeed={70}
+              loop
+            />
+          </p>
+          <div className="py-2" data-aos="zoom-in">
+            <a
+              className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My Resume
+            </a>
+            <Link
+              to="contact"
+              smooth
+              duration={500}
+              className="group text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
+            >
+              Contact Me
+              <span className="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-90 duration-300 ml-2 hidden lg:block">
+                <ImArrowRight2 />
+              </span>
+            </Link>
+          </div>
+        </div>
+
+        <div
+          className=" w-full h-full pt-8 md:pt-60 lg:pt-[120px] items-center"
+          data-aos="zoom-in"
+        >
+          <img
+            src={hero}
+            alt="studio portrait of me"
+            className="rounded-2xl mx-auto w-3/4 md:w-full md:justify-center"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
