@@ -15,7 +15,7 @@ const Experience = () => {
       company: "Royal Bank of Canada",
       time: "Sept 2023 - Present",
       project:
-        "Project: an AI-based tech-support tool that can help RBC employees resolve common technology issues, including escalating tech issues, restoring corporate data, providing status updates on incident tickets and myMarketPlace requests and much more!",
+        "Project: Tia, an AI-based tech-support tool that can help RBC employees resolve common technology issues, including escalating tech issues, restoring corporate data, providing status updates on incident tickets and myMarketPlace requests and much more!",
       point1:
         " - Designed and implemented dark mode in conversational chat bot using react.js, TypeScript, CSS.",
       point2:
