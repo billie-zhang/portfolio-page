@@ -50,9 +50,9 @@ const About = () => {
         <p className="text-l leading-relaxed" data-aos="fade-up">
           Beyond learning and growing in the professional realm, I also enjoy
           reading, baking, early morning runs, spending time with family and
-          friends, crocheting, learning new music and being outside with nature.
-          Feel free to reach out if you have any questions or just want to chat!
-          I love to connect with like-minded individuals.
+          friends, learning new languages, crocheting, learning music and being
+          outside with nature. Feel free to reach out if you have any questions
+          or just want to chat! I love to connect with like-minded individuals.
           <b> Currently seeking Summer 2024 opportunities.</b>
         </p>
       </div>
