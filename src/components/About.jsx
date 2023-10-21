@@ -52,8 +52,9 @@ const About = () => {
           exploring many other hobbies that spark my creativity. I can easily
           spend an entire day reading a book, immersed in a new journey. In the
           real world, I love traveling, being able to explore diverse cultures
-          and landscapes. Both reading and traveling transport me to different
-          worlds, igniting my curiosity and fueling my passion for exploration.
+          and landscapes excites me. Both reading and traveling transport me to
+          different worlds, igniting my curiosity and fueling my passion for
+          exploration.
         </p>
 
         <br />
