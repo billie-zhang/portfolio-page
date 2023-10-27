@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import about1 from "../assets/about1.jpg";
+import about2 from "../assets/about2.jpg";
+import about3 from "../assets/about3.jpg";
+import about4 from "../assets/about4.jpg";
+import about5 from "../assets/about5.jpg";
+import about6 from "../assets/about6.jpg";
+import about7 from "../assets/about7.jpg";
+import about8 from "../assets/about8.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -59,6 +69,16 @@ const About = () => {
 
         <br />
         {/* insert photo gallery  */}
+        <AliceCarousel autoplay autoPlayInterval="3000">
+          <img src={about1} alt="alma" />
+          <img src={about2} alt="alma" />
+          <img src={about3} alt="alma" />
+          <img src={about4} alt="alma" />
+          <img src={about5} alt="alma" />
+          <img src={about6} alt="nyc" />
+          <img src={about7} alt="vancouver" />
+          <img src={about8} alt="seattle" />
+        </AliceCarousel>
 
         <p className="text-l leading-relaxed" data-aos="fade-up">
           I also find joy in learning new languages (besides programming), even
