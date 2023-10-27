@@ -69,12 +69,12 @@ const About = () => {
 
         <br />
         {/* insert photo gallery  */}
-        <AliceCarousel autoplay autoPlayInterval="3000">
+        <AliceCarousel autoplay autoPlayInterval="2000" className="h-[60px]">
           <img src={about1} alt="alma" />
-          <img src={about2} alt="alma" />
-          <img src={about3} alt="alma" />
-          <img src={about4} alt="alma" />
-          <img src={about5} alt="alma" />
+          <img src={about2} alt="disney" />
+          <img src={about3} alt="algonquin" />
+          <img src={about4} alt="yellowstone" />
+          <img src={about5} alt="grand teton" />
           <img src={about6} alt="nyc" />
           <img src={about7} alt="vancouver" />
           <img src={about8} alt="seattle" />
