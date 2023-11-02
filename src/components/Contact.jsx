@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="h-[700px] md:h-full w-full pt-[110px] bg-almost-black text-light-grey"
+      className="h-full md:h-full w-full pt-[110px] bg-almost-black text-light-grey"
     >
       <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center h-auto">
         <div className="">
@@ -89,7 +89,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="w-full md:w-2/3 ml-8 mr-8 md:mr-0 p-8 flex justify-center items-center">
+          <div className="w-full md:w-2/3 md:ml-8 mr-8 md:mr-0 p-8 flex justify-center items-center">
             <form
               ref={form}
               onSubmit={sendEmail}
