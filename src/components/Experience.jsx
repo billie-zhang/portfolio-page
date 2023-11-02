@@ -22,6 +22,8 @@ const Experience = () => {
         " - Implemented an intuitive conversational flow in the backend using TypeScript, allowing new hires and students to have a more seamless onboarding process.",
       point3:
         " - Designed and executed UI components using Figma, striking a balance between aesthetics and functionality.",
+      point4:
+        " - Collaborated in cross-functional teams, utilizing Agile methodologies and Jira, to ensure streamlined project management.",
     },
     {
       id: 2,
@@ -41,7 +43,7 @@ const Experience = () => {
       company: "Conference in Diversity in Engineering Organizing Committee",
       time: "Jan 2023 - Present",
       point1:
-        " - Secured conference sponsorships through proposal presentations and effective communication with potential sponsor representatives.",
+        " - Secured conference sponsorships through proposal presentations and effective communication with potential sponsor representatives, resulting in 20% increase in revenue.",
       point2:
         " - Created invoices for delegates, maintained records of cash flow and follow up with invoice payments, including managing cheques and EFT.",
       point3: "",
@@ -73,6 +75,7 @@ const Experience = () => {
               point1,
               point2,
               point3,
+              point4,
             }) => (
               <div key={id} data-aos="fade-up">
                 <div className=" flex pt-8 items-center">
@@ -90,6 +93,7 @@ const Experience = () => {
                   <p>{point1}</p>
                   <p>{point2}</p>
                   <p>{point3}</p>
+                  <p>{point4}</p>
                 </div>
               </div>
             )
