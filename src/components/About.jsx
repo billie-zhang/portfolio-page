@@ -58,7 +58,6 @@ const About = () => {
         </p>
 
         <br />
-        {/* insert photo gallery  */}
 
         <p className="text-l leading-relaxed" data-aos="fade-up">
           I also find joy in learning new languages (besides programming), even
