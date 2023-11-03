@@ -1,23 +1,16 @@
-import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import AnimRoutes from "./components/AnimRoutes";
 import Footer from "./components/Footer";
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  return (
-    <div>
+  return <>
+    <BrowserRouter>
       <NavBar />
-      <Home />
-      <Experience />
-      <Projects />
-      <About />
-      <Contact />
+      <AnimRoutes />
       <Footer />
-    </div>
-  );
-}
+    </BrowserRouter>
+  </>;
+};
 
 export default App;

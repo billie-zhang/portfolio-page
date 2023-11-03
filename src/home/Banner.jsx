@@ -7,13 +7,13 @@ import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Home = () => {
+const Banner = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
     <div
-      name="home"
+      name="banner"
       className="h-screen sm:h-[1000px] md:h-screen bg-almost-black pt-[80px] md:pt-[40px] lg:pt-[100px]"
     >
       <div className=" max-w-screen-lg  mx-auto flex flex-col items-center justify-center w-full h-full px-6 md:flex-row">
@@ -87,4 +87,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
