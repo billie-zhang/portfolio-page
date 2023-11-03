@@ -66,7 +66,7 @@ const NavBar = () => {
           <Link
             to="home"
             smooth
-            duration={1000}
+            duration={2000}
             className="font-semibold font-signature text-4xl ml-8 mt-10 mb-9 cursor-pointer"
           >
             bz
@@ -79,7 +79,7 @@ const NavBar = () => {
               key={id}
               className="px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
             >
-              <Link to={link} smooth duration={1000}>
+              <Link to={link} smooth duration={2000}>
                 {link}
               </Link>
             </li>
@@ -109,7 +109,7 @@ const NavBar = () => {
                   onClick={() => setNav(!nav)}
                   to={link}
                   smooth
-                  duration={500}
+                  duration={2000}
                 >
                   {link}
                 </Link>
