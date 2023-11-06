@@ -34,7 +34,7 @@ const Footer = () => {
         </ul>
 
         <p className="text-pale-blue py-2">
-          &#169; Billie Zhang 2023. All Rights Reserved.
+          &#169; Designed and built with love by Billie Zhang 2023.
         </p>
       </div>
     </div>
