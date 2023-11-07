@@ -4,12 +4,12 @@ const PrototypeFE = () => {
   return (
     <div
       name="findease"
-      className="h-full sm:h-[1000px] md:h-full bg-almost-black pt-[80px] md:pt-[40px] lg:pt-[100px]"
+      className="h-full bg-almost-black text-light-grey pt-[80px]"
     >
-      <div className="max-w-screen-lg  mx-auto flex flex-col items-center justify-center w-full h-full px-6">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center w-full h-full px-6">
         <div>
-          <h2 className="font-signature mt-10 md:pt-0 lg:mt-24 py-4 lg:text-4xl text-3xl font-bold text-light-grey">
-            Prototype
+          <h2 className="font-signature text-4xl font-bold inline ">
+            prototype
           </h2>
         </div>
 
