@@ -63,13 +63,13 @@ const Projects = () => {
             >
               <img src={src} alt="" className="rounded-t-md" />
               <div>
-                <h4 className="px-4 pt-3 font-bold text-2xl">{title}</h4>
-                <p className="px-4 py-3 text-md leading-relaxed line-clamp-4">
+                <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
+                <p className="px-4 py-3 text-sm leading-relaxed line-clamp-4">
                   {desc}
                 </p>
               </div>
               <div>
-                <div className="flex flex-row justify-between items-center px-4 place-content-end">
+                <div className="flex flex-row justify-between items-center px-4 ">
                   <p className="items-center pb-3 text-sm leading-relaxed">
                     {lang}
                   </p>
@@ -78,9 +78,9 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href={github}
-                      className="w-10 px-2 pb-3 duration-200 hover:scale-105"
+                      className="px-2 pb-3 duration-200 hover:scale-105"
                     >
-                      <FaGithub className="w-full" />
+                      <FaGithub className="w-full scale-110" />
                     </a>
                     <a
                       target="_blank"
