@@ -70,7 +70,7 @@ const Projects = () => {
               </div>
               <div>
                 <div className="flex flex-row justify-between items-center px-4 ">
-                  <p className="items-center pb-3 text-sm leading-relaxed">
+                  <p className="items-center pb-3 text-sm leading-relaxed italic ">
                     {lang}
                   </p>
                   <div className="flex ">
