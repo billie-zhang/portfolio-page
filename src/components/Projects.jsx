@@ -45,7 +45,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="h-[1550px] sm:h-[1000px] md:h-[650px] lg:h-[700px] pt-[110px] bg-almost-black w-full text-light-grey"
+      className="h-full pt-[110px] bg-almost-black w-full text-light-grey"
     >
       <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full">
         <div className="pb-10" data-aos="fade-up">
@@ -53,7 +53,7 @@ const Projects = () => {
           {/* <p className="py-4">some fun stuff I've created!</p> */}
         </div>
         <div
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0"
+          className="grid sm:grid-cols-2 gap-16 px-12 sm:px-0"
           data-aos="fade-up"
         >
           {projects.map(({ id, src, title, desc, lang, github, link }) => (
@@ -64,13 +64,13 @@ const Projects = () => {
               <img src={src} alt="" className="rounded-t-md" />
               <div>
                 <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
-                <p className="px-4 py-3 text-xs leading-relaxed line-clamp-4">
+                <p className="px-4 py-3 text-sm leading-relaxed line-clamp-4">
                   {desc}
                 </p>
               </div>
               <div>
-                <div className="flex flex-row justify-between items-center px-4 place-content-end">
-                  <p className="items-center pb-3 text-sm leading-relaxed">
+                <div className="flex flex-row justify-between items-center px-4 ">
+                  <p className="items-center pb-3 text-sm leading-relaxed italic ">
                     {lang}
                   </p>
                   <div className="flex ">
@@ -78,9 +78,9 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       href={github}
-                      className="w-10 px-2 pb-3 duration-200 hover:scale-105"
+                      className="px-2 pb-3 duration-200 hover:scale-105"
                     >
-                      <FaGithub className="w-full" />
+                      <FaGithub className="w-full scale-110" />
                     </a>
                     <a
                       target="_blank"
