@@ -26,6 +26,7 @@ const NavBar = () => {
   }, []);
 
   const [nav, setNav] = useState(false);
+  // eslint-disable-next-line
   const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
