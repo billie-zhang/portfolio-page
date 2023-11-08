@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 // eslint-disable-next-line
 import moon from "../assets/moon.svg";
@@ -13,7 +12,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -76,7 +75,7 @@ const NavBar = () => {
       <div
         className={
           scrolled
-            ? "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-dark-navy/70 backdrop-blur-sm fixed ease-in-out duration-500"
+            ? "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-dark-navy/80 backdrop-blur-md fixed ease-in-out duration-500"
             : "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-transparent fixed ease-in-out duration-500 "
         }
         data-aos="fade-down"
@@ -114,28 +113,55 @@ const NavBar = () => {
           />
         </div> */}
 
+        {/* mobile nav open/close  */}
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-light-blue md:hidden"
+          className="cursor-pointer pr-4 md:hidden"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          <div
+            className={
+              nav
+                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue -rotate-45 -translate-x-[4px] translate-y-[5px]"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
+          <div
+            className={
+              nav
+                ? "opacity-0"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
+          <div
+            className={
+              nav
+                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue rotate-45 -translate-x-[4px] -translate-y-[5px]"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
         </div>
 
         {nav && (
-          <ul className="flex flex-col items-center absolute pt-[100px] top-0 right-0 h-screen bg-dark-navy/95 text-light-grey ">
-            {links.map(({ id, link }) => (
-              <li key={id} className="px-20 cursor-pointer py-4 text-xl">
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={link}
-                  smooth
-                  duration={2000}
-                >
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div
+            className={`flex flex-col items-center absolute top-24 left-0 py-[40px] w-full rounded-b-[40px] bg-dark-navy/80 backdrop-blur-md text-light-grey transition-all duration-500 ease-in`}
+            data-aos="fade"
+            data-aos-duration="600"
+          >
+            <ul>
+              {links.map(({ id, link }) => (
+                <li key={id} className="px-20 cursor-pointer py-4 text-xl">
+                  <Link
+                    onClick={() => setNav(!nav)}
+                    to={link}
+                    smooth
+                    duration={2000}
+                  >
+                    {link}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
     </div>
