@@ -26,6 +26,24 @@ const NavBar = () => {
   }, []);
 
   const [nav, setNav] = useState(false);
+  // eslint-disable-next-line
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 767) {
+        setShowNav(false);
+        setNav(false);
+      } else if (window.innerWidth < 767) {
+        setShowNav(true);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
