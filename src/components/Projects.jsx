@@ -64,23 +64,19 @@ const Projects = () => {
               <img src={src} alt="" className="rounded-t-md" />
               <div>
                 <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
-                <p className="px-4 py-3 text-sm leading-relaxed line-clamp-4">
-                  {desc}
-                </p>
+                <p className="px-4 py-3 text-sm/relaxed line-clamp-4">{desc}</p>
               </div>
               <div>
                 <div className="flex flex-row justify-between items-center px-4 ">
-                  <p className="items-center pb-3 text-sm leading-relaxed italic ">
-                    {lang}
-                  </p>
+                  <p className="items-center pb-3 text-sm italic ">{lang}</p>
                   <div className="flex ">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
                       href={github}
-                      className="px-2 pb-3 duration-200 hover:scale-105"
+                      className="px-3 pb-3 duration-200 hover:scale-105"
                     >
-                      <FaGithub className="w-full scale-110" />
+                      <FaGithub className="w-5 h-5" />
                     </a>
                     <a
                       target="_blank"
@@ -88,7 +84,7 @@ const Projects = () => {
                       href={link}
                       className="pb-3 duration-200 hover:scale-105"
                     >
-                      <MdOpenInNew className="w-full" />
+                      <MdOpenInNew className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
