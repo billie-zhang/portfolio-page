@@ -122,9 +122,9 @@ const NavBar = () => {
         </div>
 
         {nav && (
-          <ul className="flex flex-col items-center absolute pt-20 top-0 right-0 transform translate-x-5 duration-500	h-screen bg-dark-navy text-light-grey ">
+          <ul className="flex flex-col items-center absolute pt-[100px] top-0 right-0 h-screen bg-dark-navy/95 text-light-grey ">
             {links.map(({ id, link }) => (
-              <li key={id} className="px-16 cursor-pointer py-4 text-xl">
+              <li key={id} className="px-20 cursor-pointer py-4 text-xl">
                 <Link
                   onClick={() => setNav(!nav)}
                   to={link}
