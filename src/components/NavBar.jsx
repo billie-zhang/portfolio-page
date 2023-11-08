@@ -79,6 +79,8 @@ const NavBar = () => {
             ? "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-dark-navy/70 backdrop-blur-sm fixed ease-in-out duration-500"
             : "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-transparent fixed ease-in-out duration-500 "
         }
+        data-aos="fade-down"
+        data-aos-once
       >
         <div>
           <Link

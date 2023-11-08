@@ -13,14 +13,14 @@ const About = () => {
       className="w-full h-full pt-[110px] bg-almost-black text-light-grey"
     >
       <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full h-auto">
-        <div className="pb-8" data-aos="fade-up">
+        <div className="pb-8" data-aos="fade-up" data-aos-once>
           <h2 className="font-signature text-4xl font-bold inline ">
             about me
           </h2>
           {/* border-b-4 for underline */}
         </div>
 
-        <p className="text-l leading-relaxed" data-aos="fade-up">
+        <p className="text-l leading-relaxed" data-aos="fade-up" data-aos-once>
           I'm a{" "}
           <b>
             second year Systems Design Engineering student at the University of
@@ -34,7 +34,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-l leading-relaxed" data-aos="fade-up">
+        <p className="text-l leading-relaxed" data-aos="fade-up" data-aos-once>
           In my current role as a <b>Full Stack Developer at RBC</b>, I am
           working with React and Typescript applications, and using CSS to style
           for optimal user experiences and accessibility. The main application I
@@ -47,7 +47,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-l leading-relaxed" data-aos="fade-up">
+        <p className="text-l leading-relaxed" data-aos="fade-up" data-aos-once>
           Beyond learning and growing in the professional realm, I also enjoy
           exploring many other hobbies that spark my creativity. I can easily
           spend an entire day reading a book, immersed in a new journey. In the
@@ -59,7 +59,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-l leading-relaxed" data-aos="fade-up">
+        <p className="text-l leading-relaxed" data-aos="fade-up" data-aos-once>
           I also find joy in learning new languages (besides programming), even
           if I'm not very good at it, I still find it fun. I'm currently
           learning Spanish and Korean! Another language I lose myself in is
@@ -73,7 +73,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-l leading-relaxed" data-aos="fade-up">
+        <p className="text-l leading-relaxed" data-aos="fade-up" data-aos-once>
           Feel free to reach out if you have any questions or just want to chat!
           I love to connect with like-minded individuals who share common
           interests and passions.

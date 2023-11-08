@@ -21,12 +21,14 @@ const Home = () => {
           <h1
             className="font-signature mt-10 md:pt-0 lg:mt-24 py-4 lg:text-6xl text-5xl font-bold text-light-grey"
             data-aos="fade"
+            data-aos-once
           >
             Hi I'm Billie!
           </h1>
           <p
             className="font-signature text-3xl lg:text-4xl my-4 font-medium text-light-grey"
             data-aos="fade"
+            data-aos-once
           >
             I'm{" "}
             <TypeAnimation
@@ -49,7 +51,7 @@ const Home = () => {
               repeat={Infinity}
             />
           </p>
-          <div className="py-2" data-aos="zoom-in">
+          <div className="py-2" data-aos="zoom-in" data-aos-once>
             <a
               className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
               href={resume}
@@ -75,6 +77,7 @@ const Home = () => {
         <div
           className=" w-full h-full pt-8 md:pt-60 lg:pt-[120px] items-center"
           data-aos="zoom-in"
+          data-aos-once
         >
           <img
             src={hero}

@@ -73,14 +73,15 @@ const Contact = () => {
           <h2
             className="font-signature text-4xl font-bold inline "
             data-aos="fade-up"
+            data-aos-once
           >
             contact
           </h2>
-          <p className="pt-4" data-aos="fade-up">
+          <p className="pt-4" data-aos="fade-up" data-aos-once>
             Get in touch if you have any questions or want to chat!
           </p>
         </div>
-        <div className="flex flex-row" data-aos="fade-up">
+        <div className="flex flex-row" data-aos="fade-up" data-aos-once>
           <div className=" h-full hidden md:block">
             <img
               src={thinking}

@@ -48,13 +48,14 @@ const Projects = () => {
       className="h-full pt-[110px] bg-almost-black w-full text-light-grey"
     >
       <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full">
-        <div className="pb-10" data-aos="fade-up">
+        <div className="pb-10" data-aos="fade-up" data-aos-once>
           <h2 className="font-signature text-4xl font-bold inline">projects</h2>
           {/* <p className="py-4">some fun stuff I've created!</p> */}
         </div>
         <div
           className="grid sm:grid-cols-2 gap-16 px-12 sm:px-0"
           data-aos="fade-up"
+          data-aos-once
         >
           {projects.map(({ id, src, title, desc, lang, github, link }) => (
             <div

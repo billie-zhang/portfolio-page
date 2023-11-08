@@ -60,6 +60,7 @@ const Experience = () => {
           <h2
             className="font-signature text-4xl font-bold inline "
             data-aos="fade-up"
+            data-aos-once
           >
             experience
           </h2>
@@ -77,7 +78,7 @@ const Experience = () => {
               point3,
               point4,
             }) => (
-              <div key={id} data-aos="fade-up">
+              <div key={id} data-aos="fade-up" data-aos-once>
                 <div className=" flex pt-8 items-center">
                   <p className=" text-xl font-bold pr-3 text-medium-blue">
                     {experience}
@@ -99,7 +100,7 @@ const Experience = () => {
             )
           )}
         </div>
-        <div className="py-8" data-aos="fade-up">
+        <div className="py-8" data-aos="fade-up" data-aos-once>
           <a
             className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             href={resume}
