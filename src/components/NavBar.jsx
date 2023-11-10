@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { IoMoonOutline } from "react-icons/io5";
 import { Link } from "react-scroll";
 // eslint-disable-next-line
 import moon from "../assets/moon.svg";
@@ -92,18 +93,22 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <ul className="hidden md:flex">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
-            >
-              <Link to={link} smooth duration={2000}>
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-row justify-end">
+          <ul className="hidden md:flex">
+            {links.map(({ id, link }) => (
+              <li
+                key={id}
+                className="px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
+              >
+                <Link to={link} smooth duration={2000}>
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <IoMoonOutline className="h-8 w-[30px] items-center my-5 mx-7 cursor-pointer text-light-blue" />
+        </div>
 
         {/* mobile nav open/close  */}
         <div
