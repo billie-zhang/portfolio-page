@@ -105,14 +105,6 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* <div>
-          <img
-            src={moon}
-            alt="moon"
-            className=" ml-5 mr-6 cursor-pointer w-[30px] text-light-blue"
-          />
-        </div> */}
-
         {/* mobile nav open/close  */}
         <div
           onClick={() => setNav(!nav)}
