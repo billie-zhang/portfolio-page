@@ -93,12 +93,12 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div className="flex flex-row justify-end">
-          <ul className="hidden md:flex">
+        <div className="hidden md:flex flex-row justify-end ">
+          <ul className="flex">
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
+                className="px-4 lg:px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
               >
                 <Link to={link} smooth duration={2000}>
                   {link}
