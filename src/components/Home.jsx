@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import hero from "../assets/me3.svg";
-import { ImArrowRight2 } from "react-icons/im";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import resume from "../assets/BillieZhangResume.pdf";
@@ -64,12 +63,9 @@ const Home = () => {
               to="contact"
               smooth
               duration={500}
-              className="group text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
+              className="text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             >
               Contact
-              <span className="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-90 duration-300 ml-2 hidden lg:block">
-                <ImArrowRight2 />
-              </span>
             </Link>
           </div>
         </div>
