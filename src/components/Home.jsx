@@ -62,7 +62,7 @@ const Home = () => {
             <Link
               to="contact"
               smooth
-              duration={500}
+              duration={2000}
               className="text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             >
               Contact
