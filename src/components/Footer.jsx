@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="text-pale-blue py-2 flex flex-row">
           <p>&#169; Designed and built with love by Billie Zhang{"  "}</p>
-          <FaHeart className="h-6 mx-2 fill-medium-blue" />
+          <FaHeart className="hidden sm:block h-6 mx-2 fill-medium-blue" />
         </div>
       </div>
     </div>
