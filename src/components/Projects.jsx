@@ -62,9 +62,13 @@ const Projects = () => {
               key={id}
               className="shadow-md shadow-gray-500 rounded-lg duration-500 hover:scale-105"
             >
-              <img src={src} alt="" className="rounded-t-md" />
+              <a target="_blank" rel="noopener noreferrer" href={link}>
+                <img src={src} alt="" className="rounded-t-md" />
+              </a>
               <div>
-                <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
+                <a target="_blank" rel="noopener noreferrer" href={link}>
+                  <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
+                </a>
                 <p className="px-4 py-3 text-sm/relaxed line-clamp-4">{desc}</p>
               </div>
               <div>
