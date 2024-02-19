@@ -3,17 +3,17 @@ import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Experience = () => {
+const Leadership = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const experience = [
+  const leadership = [
     {
       id: 1,
-      experience: "Full Stack Developer",
-      company: "Royal Bank of Canada",
-      time: "Sept - Dec 2023",
+      experience: "VP Finance",
+      company: "Professional Engineers of Ontario - Student Conference",
+      time: "Jan 2023 - Present",
       project:
         "Project: Tia, an AI-based tech-support tool that can help RBC employees resolve common technology issues, including escalating tech issues, restoring corporate data, providing status updates on incident tickets and myMarketPlace requests and much more!",
       point1:
@@ -27,15 +27,14 @@ const Experience = () => {
     },
     {
       id: 2,
-      experience: "Technical Systems Analyst",
-      company: "Royal Bank of Canada",
-      time: "Jan - Apr 2023",
+      experience: "Sponsorship & Finance Director",
+      company: "Conference in Diversity in Engineering Organizing Committee",
+      time: "Jan - Dec 2023",
       point1:
-        " - Processed over 2000 user access and permissions requests on ServiceNow platform. ",
+        " - Secured conference sponsorships through proposal presentations and effective communication with potential sponsor representatives, resulting in 20% increase in revenue.",
       point2:
-        " - Improved task efficiency as measured by tracking completion times and error rates, by streamlining and automating processes and eliminating unnecessary steps, resulted in faster turnaround times and increased capacity.",
-      point3:
-        " - Trained coworkers on processes and procedures, promoting a culture of continuous learning and improvement.",
+        " - Created invoices for delegates, maintained records of cash flow and follow up with invoice payments, including managing cheques and EFT.",
+      point3: "",
     },
   ];
 
@@ -51,11 +50,11 @@ const Experience = () => {
       >
         <div>
           <h2 className="font-signature text-4xl font-bold inline ">
-            professional experience
+            leadership experience
           </h2>
         </div>
         <div>
-          {experience.map(
+          {leadership.map(
             ({
               id,
               experience,
@@ -89,7 +88,7 @@ const Experience = () => {
             )
           )}
         </div>
-        {/* <div className="py-8">
+        <div className="py-8">
           <a
             className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             href={resume}
@@ -98,10 +97,10 @@ const Experience = () => {
           >
             Resume
           </a>
-        </div> */}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default Leadership;
