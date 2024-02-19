@@ -14,16 +14,12 @@ const Leadership = () => {
       experience: "VP Finance",
       company: "Professional Engineers of Ontario - Student Conference",
       time: "Jan 2023 - Present",
-      project:
-        "Project: Tia, an AI-based tech-support tool that can help RBC employees resolve common technology issues, including escalating tech issues, restoring corporate data, providing status updates on incident tickets and myMarketPlace requests and much more!",
       point1:
-        " - Designed and implemented dark mode in conversational chat bot using react.js, TypeScript, CSS.",
+        " - Developed comprehensive budget portfolios and invoices, ensuring precise financial management.",
       point2:
-        " - Implemented an intuitive conversational flow in the backend using TypeScript, allowing new hires and students to have a more seamless onboarding process.",
+        " - Refined contingency plans to address potential financial challenges and ensure business continuity. ",
       point3:
-        " - Designed and executed UI components using Figma, striking a balance between aesthetics and functionality.",
-      point4:
-        " - Collaborated in cross-functional teams, utilizing Agile methodologies and Jira, to ensure streamlined project management.",
+        " - Worked with each division to ensure that budgets were being met and making adjustments as necessary.",
     },
     {
       id: 2,
@@ -41,7 +37,7 @@ const Leadership = () => {
   return (
     <div
       name="experience"
-      className="h-[1650px] sm:h-[1200px] md:h-[1200px] lg:h-[1000px] w-full pt-[110px] bg-almost-black text-light-grey"
+      className="h-[1650px] sm:h-[1200px] md:h-[1200px] lg:h-[800px] w-full pt-[110px] bg-almost-black text-light-grey"
     >
       <div
         className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full h-auto"
