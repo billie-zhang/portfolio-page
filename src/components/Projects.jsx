@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { MdOpenInNew } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import seasonal from "../assets/Seasonal.png";
 import bzwebsite from "../assets/website.png";
 import bbl from "../assets/bbl.png";
 import eco from "../assets/ecothreads.png";
@@ -15,6 +16,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      src: seasonal,
+      title: "Seasonal",
+      desc: "An app that helps you pick the perfect fruits at the perfect time. Seasonal scans fruits and informs consumers on the fruit ripeness, seasonality, and recipe recommendations.",
+      lang: "react.js, tailwind CSS, OpenAI, Figma",
+      github: "https://github.com/billie-zhang/Seasonal",
+      link: "https://seasonal-app.vercel.app/",
+    },
+    {
+      id: 2,
       src: bzwebsite,
       title: "Portfolio Website",
       desc: "A personal portfolio website showcasing my professional journey, skills, and accomplishments. The site serves as a comprehensive snapshot of my abilities.",
@@ -23,7 +33,7 @@ const Projects = () => {
       link: "https://billiezhang.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       src: eco,
       title: "EcoThreads",
       desc: "A website that displays an interactive Figma prototype of a fashion sustainability app and serves as a web preview for the app, built for HackTheGlobe.",
@@ -31,15 +41,15 @@ const Projects = () => {
       github: "https://github.com/billie-zhang/EcoThreads",
       link: "https://billie-zhang.github.io/EcoThreads/",
     },
-    {
-      id: 3,
-      src: bbl,
-      title: "Billie's Baking Life",
-      desc: "A food blog where I spill the beans (and sugar) on all things delicious, from pretty cakes to the chewiest cookies! I'm the recipe developer, taste-tester and photographer.",
-      lang: "Wordpress, HTML, CSS",
-      github: "https://github.com/billie-zhang/billies-baking-life",
-      link: "https://www.billiesbakinglife.com/",
-    },
+    // {
+    //   id: 4,
+    //   src: bbl,
+    //   title: "Billie's Baking Life",
+    //   desc: "A food blog where I spill the beans (and sugar) on all things delicious, from pretty cakes to the chewiest cookies! I'm the recipe developer, taste-tester and photographer.",
+    //   lang: "Wordpress, HTML, CSS",
+    //   github: "https://github.com/billie-zhang/billies-baking-life",
+    //   link: "https://www.billiesbakinglife.com/",
+    // },
   ];
 
   return (
