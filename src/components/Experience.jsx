@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import resume from "../assets/BillieZhangResume.pdf";
+// import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
