@@ -82,7 +82,7 @@ const About = () => {
             Feel free to reach out if you have any questions or just want to
             chat! I love to connect with like-minded individuals who share
             common interests and passions.
-            <b> Currently seeking Summer 2024 opportunities.</b>
+            <b> Currently seeking Fall 2024 opportunities.</b>
           </p>
         </div>
       </div>
