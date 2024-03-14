@@ -42,6 +42,10 @@ const Home = () => {
                 1500,
                 "a curious mind",
                 1500,
+                "a problem solver",
+                1500,
+                "a team player",
+                1500,
               ]}
               wrapper="span"
               cursor={true}
