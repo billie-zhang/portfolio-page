@@ -18,7 +18,7 @@ const NoPage = () => {
           to={"/"}
           className="text-3xl font-bold flex items-center justify-center py-4 hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
         >
-          Return to the homepage
+          Return to homepage
         </Link>
       </div>
       <Contact />
