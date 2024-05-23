@@ -40,10 +40,18 @@ const About = () => {
           <br />
 
           <p>
-            In my most recent role as a <b>Full Stack Developer at RBC</b>, I
-            worked with React and Typescript applications, using CSS to style
-            for optimal user experiences and accessibility. The main application
-            I worked on is a Tia, a chatbot that is able to help RBC employees
+            In my current role as a{" "}
+            <b>Quality Software Engineer at Omniscient Neurotechnology</b>, I'm
+            working with Playwright and Typescript.
+          </p>
+
+          <br />
+
+          <p>
+            In my previous as a <b>Full Stack Developer at RBC</b>, I worked
+            with React and Typescript applications, using CSS to style for
+            optimal user experiences and accessibility. The main application I
+            worked on is a Tia, a chatbot that is able to help RBC employees
             with their tech inquiries, including laptop issues, ticket lookup,
             VPN lockout, and much more. Additionally, I designed components of
             our applications on Figma and implemented new conversation flows to
