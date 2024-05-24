@@ -66,7 +66,7 @@ const Projects = () => {
           <h2 className="font-signature text-4xl font-bold inline">projects</h2>
           {/* <p className="py-4">some fun stuff I've created!</p> */}
         </div>
-        <div className="grid sm:grid-cols-2 gap-16 px-12 sm:px-0">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-4 px-12 sm:px-0">
           {projects.map(({ id, src, title, desc, lang, github, link }) => (
             <div
               key={id}
@@ -79,7 +79,9 @@ const Projects = () => {
                 <a target="_blank" rel="noopener noreferrer" href={link}>
                   <h4 className="px-4 pt-3 font-bold text-xl">{title}</h4>
                 </a>
-                <p className="px-4 py-3 text-sm/relaxed line-clamp-4">{desc}</p>
+                <p className="px-4 py-3 text-sm/relaxed lg:text-xs/relaxed line-clamp-4">
+                  {desc}
+                </p>
               </div>
               <div>
                 <div className="flex flex-row justify-between items-center px-4 ">

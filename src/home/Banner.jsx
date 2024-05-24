@@ -26,7 +26,7 @@ const Banner = () => {
             Hi I'm Billie!
           </h1>
           <p
-            className="font-signature text-3xl lg:text-4xl my-4 font-medium text-light-grey"
+            className="font-signature text-3xl lg:text-4xl my-5 font-medium text-light-grey"
             data-aos="fade"
             data-aos-once
           >

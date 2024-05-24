@@ -110,41 +110,47 @@ const NavBar = () => {
           <div
             className={
               nav
-                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue -rotate-45 -translate-x-[4px] translate-y-[5px]"
-                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+                ? "z-40 w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue -rotate-45 -translate-x-[4px] translate-y-[5px]"
+                : "z-40 w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
             }
           ></div>
           <div
             className={
               nav
-                ? "opacity-0"
-                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+                ? "z-40 opacity-0"
+                : "z-40 w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
             }
           ></div>
           <div
             className={
               nav
-                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue rotate-45 -translate-x-[4px] -translate-y-[5px]"
-                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+                ? "z-40 w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue rotate-45 -translate-x-[4px] -translate-y-[5px]"
+                : "z-40 w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
             }
           ></div>
         </div>
 
         {nav && (
-          <ul className="flex flex-col items-center absolute pt-20 top-0 right-0 transform translate-x-5 duration-500	h-screen bg-dark-navy text-light-grey ">
-            {links.map(({ id, link, url }) => (
-              <li key={id} className="px-16 cursor-pointer py-4 text-xl">
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={url}
-                  smooth
-                  duration={2000}
-                >
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div
+            className={`flex flex-col items-center absolute top-24 left-0 py-[40px] w-full rounded-b-[40px] bg-dark-navy/80 backdrop-blur-md text-light-grey transition-all duration-500 ease-in`}
+            data-aos="fade"
+            data-aos-duration="600"
+          >
+            <ul>
+              {links.map(({ id, link, url }) => (
+                <li key={id} className="px-16 cursor-pointer py-4 text-xl">
+                  <Link
+                    onClick={() => setNav(!nav)}
+                    to={url}
+                    smooth
+                    duration={2000}
+                  >
+                    {link}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
     </div>
