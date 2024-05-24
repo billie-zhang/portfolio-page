@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import resume from "../assets/BillieZhangResume.pdf";
+// import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,9 +11,22 @@ const Experience = () => {
   const experience = [
     {
       id: 1,
+      experience: "Quality Software Engineer",
+      company: "Omniscient Neurotechnology",
+      time: "May - Aug 2024",
+      project:
+        "Project: Quicktome, a cloud-based tool built for brain health physicians that allows them to obtain visualization of clinically critical brain networks with automated mapping technology.",
+      point1:
+        " - Developed and executed automated test scripts using Playwright, significantly reducing manual testing efforts and enhancing overall test coverage by 88%.",
+      point2:
+        " - Enhanced Quicktome's software quality and reliability as measured by a 30% decrease in bug reports from end-users, by implementing comprehensive automated tests using Playwright and Bruno test frameworks.",
+      point3: " - API tests using Bruno",
+    },
+    {
+      id: 2,
       experience: "Full Stack Developer",
       company: "Royal Bank of Canada",
-      time: "Sept 2023 - Present",
+      time: "Sept - Dec 2023",
       project:
         "Project: Tia, an AI-based tech-support tool that can help RBC employees resolve common technology issues, including escalating tech issues, restoring corporate data, providing status updates on incident tickets and myMarketPlace requests and much more!",
       point1:
@@ -26,7 +39,7 @@ const Experience = () => {
         " - Collaborated in cross-functional teams, utilizing Agile methodologies and Jira, to ensure streamlined project management.",
     },
     {
-      id: 2,
+      id: 3,
       experience: "Technical Systems Analyst",
       company: "Royal Bank of Canada",
       time: "Jan - Apr 2023",
@@ -37,31 +50,21 @@ const Experience = () => {
       point3:
         " - Trained coworkers on processes and procedures, promoting a culture of continuous learning and improvement.",
     },
-    {
-      id: 3,
-      experience: "Sponsorship & Finance Director",
-      company: "Conference in Diversity in Engineering Organizing Committee",
-      time: "Jan 2023 - Present",
-      point1:
-        " - Secured conference sponsorships through proposal presentations and effective communication with potential sponsor representatives, resulting in 20% increase in revenue.",
-      point2:
-        " - Created invoices for delegates, maintained records of cash flow and follow up with invoice payments, including managing cheques and EFT.",
-      point3: "",
-    },
   ];
 
   return (
     <div
       name="experience"
-      className="h-[1650px] sm:h-[1200px] md:h-[1200px] lg:h-[1000px] w-full pt-[110px] bg-almost-black text-light-grey"
+      className="h-full sm:h-[1200px] md:h-full w-full pt-[110px] bg-almost-black text-light-grey"
     >
-      <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full h-auto">
+      <div
+        className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full h-auto"
+        data-aos="fade-up"
+        data-aos-once
+      >
         <div>
-          <h2
-            className="font-signature text-4xl font-bold inline "
-            data-aos="fade-up"
-          >
-            experience
+          <h2 className="font-signature text-4xl font-bold inline ">
+            professional experience
           </h2>
         </div>
         <div>
@@ -77,7 +80,7 @@ const Experience = () => {
               point3,
               point4,
             }) => (
-              <div key={id} data-aos="fade-up">
+              <div key={id}>
                 <div className=" flex pt-8 items-center">
                   <p className=" text-xl font-bold pr-3 text-medium-blue">
                     {experience}
@@ -99,7 +102,7 @@ const Experience = () => {
             )
           )}
         </div>
-        <div className="py-8" data-aos="fade-up">
+        {/* <div className="py-8">
           <a
             className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             href={resume}
@@ -108,7 +111,7 @@ const Experience = () => {
           >
             Resume
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

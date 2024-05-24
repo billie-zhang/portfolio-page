@@ -14,7 +14,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -27,6 +27,24 @@ const NavBar = () => {
   }, []);
 
   const [nav, setNav] = useState(false);
+  // eslint-disable-next-line
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 767) {
+        setShowNav(false);
+        setNav(false);
+      } else if (window.innerWidth < 767) {
+        setShowNav(true);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -54,9 +72,11 @@ const NavBar = () => {
       <div
         className={
           scrolled
-            ? "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-dark-navy/70 backdrop-blur-sm fixed ease-in-out duration-500"
+            ? "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-dark-navy/80 backdrop-blur-md fixed ease-in-out duration-500"
             : "flex z-50 justify-between items-center w-full h-24 px-4 text-pale-blue bg-transparent fixed ease-in-out duration-500 "
         }
+        data-aos="fade-down"
+        data-aos-once
       >
         <div>
           <Link
@@ -82,19 +102,32 @@ const NavBar = () => {
           ))}
         </ul>
 
-        {/* <div>
-          <img
-            src={moon}
-            alt="moon"
-            className=" ml-5 mr-6 cursor-pointer w-[30px] text-light-blue"
-          />
-        </div> */}
-
+        {/* mobile nav open/close  */}
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-light-blue md:hidden"
+          className="cursor-pointer pr-4 md:hidden"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          <div
+            className={
+              nav
+                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue -rotate-45 -translate-x-[4px] translate-y-[5px]"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
+          <div
+            className={
+              nav
+                ? "opacity-0"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
+          <div
+            className={
+              nav
+                ? "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue rotate-45 -translate-x-[4px] -translate-y-[5px]"
+                : "w-9 h-[0.2rem] m-2 duration-300 ease-in bg-light-blue"
+            }
+          ></div>
         </div>
 
         {nav && (

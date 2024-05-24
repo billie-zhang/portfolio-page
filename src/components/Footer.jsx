@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaHeart } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
@@ -33,9 +33,10 @@ const Footer = () => {
           </a>
         </ul>
 
-        <p className="text-pale-blue py-2">
-          &#169; Designed and built with love by Billie Zhang.
-        </p>
+        <div className="text-pale-blue py-2 flex flex-row">
+          <p>&#169; Designed and built with love by Billie Zhang{"  "}</p>
+          <FaHeart className="hidden sm:block h-6 mx-2 fill-medium-blue" />
+        </div>
       </div>
     </div>
   );

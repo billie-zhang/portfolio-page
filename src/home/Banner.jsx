@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import hero from "../assets/me3.svg";
-import { ImArrowRight2 } from "react-icons/im";
 import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import resume from "../assets/BillieZhangResume.pdf";
@@ -22,12 +21,14 @@ const Banner = () => {
           <h1
             className="font-signature mt-10 md:pt-0 lg:mt-24 py-4 lg:text-6xl text-5xl font-bold text-light-grey"
             data-aos="fade"
+            data-aos-once
           >
             Hi I'm Billie!
           </h1>
           <p
             className="font-signature text-3xl lg:text-4xl my-4 font-medium text-light-grey"
             data-aos="fade"
+            data-aos-once
           >
             I'm{" "}
             <TypeAnimation
@@ -42,6 +43,10 @@ const Banner = () => {
                 1500,
                 "a curious mind",
                 1500,
+                "a problem solver",
+                1500,
+                "a team player",
+                1500,
               ]}
               wrapper="span"
               cursor={true}
@@ -50,7 +55,7 @@ const Banner = () => {
               repeat={Infinity}
             />
           </p>
-          <div className="py-2" data-aos="zoom-in">
+          <div className="py-2" data-aos="zoom-in" data-aos-once>
             <a
               className=" text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
               href={resume}
@@ -62,13 +67,10 @@ const Banner = () => {
             <Link
               to="contact"
               smooth
-              duration={500}
-              className="group text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
+              duration={2000}
+              className="text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             >
               Contact
-              <span className="group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-90 duration-300 ml-2 hidden lg:block">
-                <ImArrowRight2 />
-              </span>
             </Link>
           </div>
         </div>
@@ -76,6 +78,7 @@ const Banner = () => {
         <div
           className=" w-full h-full pt-8 md:pt-60 lg:pt-[120px] items-center"
           data-aos="zoom-in"
+          data-aos-once
         >
           <img
             src={hero}

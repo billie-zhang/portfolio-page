@@ -68,19 +68,18 @@ const Contact = () => {
       name="contact"
       className="h-full md:h-full w-full pt-[110px] bg-almost-black text-light-grey"
     >
-      <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center h-auto">
-        <div className="">
-          <h2
-            className="font-signature text-4xl font-bold inline "
-            data-aos="fade-up"
-          >
-            contact
-          </h2>
-          <p className="pt-4" data-aos="fade-up">
+      <div
+        className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center h-auto"
+        data-aos="fade-up"
+        data-aos-once
+      >
+        <div>
+          <h2 className="font-signature text-4xl font-bold inline ">contact</h2>
+          <p className="pt-4">
             Get in touch if you have any questions or want to chat!
           </p>
         </div>
-        <div className="flex flex-row" data-aos="fade-up">
+        <div className="flex flex-row">
           <div className=" h-full hidden md:block">
             <img
               src={thinking}
