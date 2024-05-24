@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 // eslint-disable-next-line
 import moon from "../assets/moon.svg";
 // eslint-disable-next-line
@@ -35,22 +36,17 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
+      url: "/",
     },
     {
       id: 2,
-      link: "experience",
+      link: "projects",
+      url: "/projects",
     },
     {
       id: 3,
-      link: "projects",
-    },
-    {
-      id: 4,
       link: "about",
-    },
-    {
-      id: 5,
-      link: "contact",
+      url: "/about",
     },
   ];
   return (
@@ -64,22 +60,22 @@ const NavBar = () => {
       >
         <div>
           <Link
-            to="home"
+            to={"/"}
             smooth
             duration={2000}
-            className="font-semibold font-signature text-4xl ml-8 mt-10 mb-9 cursor-pointer"
+            className="font-semibold font-signature text-4xl ml-10 mt-10 mb-9 cursor-pointer"
           >
             bz
           </Link>
         </div>
 
-        <ul className="hidden md:flex">
-          {links.map(({ id, link }) => (
+        <ul className="hidden md:flex px-5 ">
+          {links.map(({ id, link, url }) => (
             <li
               key={id}
-              className="px-7 py-6 cursor-pointer font-medium text-lg text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
+              className="px-7 py-6 cursor-pointer font-medium text-xl text-light-blue hover:scale-105 hover:text-medium-blue duration-200 ease-in-out"
             >
-              <Link to={link} smooth duration={2000}>
+              <Link to={url} smooth duration={2000}>
                 {link}
               </Link>
             </li>
@@ -103,11 +99,11 @@ const NavBar = () => {
 
         {nav && (
           <ul className="flex flex-col items-center absolute pt-20 top-0 right-0 transform translate-x-5 duration-500	h-screen bg-dark-navy text-light-grey ">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, link, url }) => (
               <li key={id} className="px-16 cursor-pointer py-4 text-xl">
                 <Link
                   onClick={() => setNav(!nav)}
-                  to={link}
+                  to={url}
                   smooth
                   duration={2000}
                 >
