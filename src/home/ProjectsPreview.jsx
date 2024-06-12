@@ -7,6 +7,7 @@ import bbl from "../assets/bbl.png";
 import eco from "../assets/ecothreads.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   useEffect(() => {
@@ -66,7 +67,7 @@ const Projects = () => {
           <h2 className="font-signature text-4xl font-bold inline">projects</h2>
           {/* <p className="py-4">some fun stuff I've created!</p> */}
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-4 px-12 sm:px-0">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-4 px-12 pb-7 sm:px-0">
           {projects.map(({ id, src, title, desc, lang, github, link }) => (
             <div
               key={id}
@@ -109,6 +110,12 @@ const Projects = () => {
             </div>
           ))}
         </div>
+        <Link
+          to={"/projects"}
+          className="text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
+        >
+          See all projects
+        </Link>
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ const Leadership = () => {
   return (
     <div
       name="experience"
-      className="h-[1650px] sm:h-[1200px] md:h-[1200px] lg:h-[800px] w-full pt-[110px] bg-almost-black text-light-grey"
+      className="h-[1650px] sm:h-[1200px] md:h-[1200px] lg:h-[700px] w-full pt-[110px] bg-almost-black text-light-grey"
     >
       <div
         className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full h-auto"

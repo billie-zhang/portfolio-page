@@ -5,6 +5,8 @@ import seasonal from "../assets/Seasonal.png";
 import bzwebsite from "../assets/website.png";
 import bbl from "../assets/bbl.png";
 import eco from "../assets/ecothreads.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   const projects = [
@@ -51,7 +53,11 @@ const Projects = () => {
       name="projects"
       className="h-full pt-[130px] bg-almost-black w-full text-light-grey"
     >
-      <div className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full">
+      <div
+        className="max-w-screen-lg p-6 mx-auto flex flex-col justify-center w-full"
+        data-aos="fade-up"
+        data-aos-once
+      >
         <div className="pb-10">
           <h2 className="font-signature text-4xl font-bold inline">projects</h2>
           {/* <p className="py-4">some fun stuff I've created!</p> */}
