@@ -42,7 +42,8 @@ const About = () => {
           <p>
             In my current role as a{" "}
             <b>Quality Software Engineer at Omniscient Neurotechnology</b>, I'm
-            working with Playwright and Typescript.
+            working with Playwright and Typescript, writing automated tests to
+            reduce manual testing.
           </p>
 
           <br />
@@ -90,7 +91,7 @@ const About = () => {
             Feel free to reach out if you have any questions or just want to
             chat! I love to connect with like-minded individuals who share
             common interests and passions.
-            <b> Currently seeking Fall 2024 opportunities.</b>
+            <b> Currently seeking Winter 2025 opportunities.</b>
           </p>
         </div>
       </div>
