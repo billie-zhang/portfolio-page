@@ -6,16 +6,17 @@ import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Home = () => {
+const Banner = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
   return (
     <div
-      name="home"
+      name="banner"
       className="h-screen sm:h-[1000px] md:h-screen bg-almost-black pt-[80px] md:pt-[40px] lg:pt-[100px]"
     >
-      <div className=" max-w-screen-lg  mx-auto flex flex-col items-center justify-center w-full h-full px-6 md:flex-row">
+      <div className="max-w-screen-lg  mx-auto flex flex-col items-center justify-center w-full h-full px-6 md:flex-row">
         <div className="flex flex-col pt-5 md:pb-10 lg:pb-[70px] w-full h-auto md:h-full justify-center items-center md:items-start">
           <h1
             className="font-signature mt-10 md:pt-0 lg:mt-24 py-4 lg:text-6xl text-5xl font-bold text-light-grey"
@@ -25,7 +26,7 @@ const Home = () => {
             Hi I'm Billie!
           </h1>
           <p
-            className="font-signature text-3xl lg:text-4xl my-4 font-medium text-light-grey"
+            className="font-signature text-3xl lg:text-4xl my-5 font-medium text-light-grey"
             data-aos="fade"
             data-aos-once
           >
@@ -90,4 +91,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Banner;
