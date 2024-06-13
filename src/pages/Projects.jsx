@@ -3,7 +3,7 @@ import { MdOpenInNew } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import seasonal from "../assets/Seasonal.png";
 import bzwebsite from "../assets/website.png";
-import bbl from "../assets/bbl.png";
+// import bbl from "../assets/bbl.png";
 import eco from "../assets/ecothreads.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,15 +37,15 @@ const Projects = () => {
       github: "https://github.com/billie-zhang/EcoThreads",
       link: "https://billie-zhang.github.io/EcoThreads/",
     },
-    {
-      id: 4,
-      src: bbl,
-      title: "Billie's Baking Life",
-      desc: "A food blog where I spill the beans (and sugar) on all things delicious, from pretty cakes to the chewiest cookies! I'm the recipe developer, taste-tester and photographer.",
-      lang: "Wordpress, HTML, CSS",
-      github: "https://github.com/billie-zhang/billies-baking-life",
-      link: "https://www.billiesbakinglife.com/",
-    },
+    // {
+    //   id: 4,
+    //   src: bbl,
+    //   title: "Billie's Baking Life",
+    //   desc: "A food blog where I spill the beans (and sugar) on all things delicious, from pretty cakes to the chewiest cookies! I'm the recipe developer, taste-tester and photographer.",
+    //   lang: "Wordpress, HTML, CSS",
+    //   github: "https://github.com/billie-zhang/billies-baking-life",
+    //   link: "https://www.billiesbakinglife.com/",
+    // },
   ];
 
   return (
