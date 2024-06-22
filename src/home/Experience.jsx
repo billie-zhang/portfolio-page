@@ -11,19 +11,34 @@ const Experience = () => {
   const experience = [
     {
       id: 1,
+      experience: "Software Engineer",
+      company: "Develop for Good",
+      time: "June - Aug 2024",
+      // project:
+      //   "Project: Quicktome, a cloud-based tool built for brain health physicians that allows them to obtain visualization of clinically critical brain networks with automated mapping technology.",
+      point1:
+        " - Translated designs into responsive web applications using react.js and node.js, ensuring alignment with design intent and ux goals.",
+      point2:
+        " - Developed and executed advanced scripts to automate the process of connecting members based on geographic location, mutual interests, and goals, leading to more targeted and effective networking opportunities.",
+    },
+    {
+      id: 2,
       experience: "Quality Software Engineer",
       company: "Omniscient Neurotechnology",
       time: "May - Aug 2024",
       project:
         "Project: Quicktome, a cloud-based tool built for brain health physicians that allows them to obtain visualization of clinically critical brain networks with automated mapping technology.",
       point1:
-        " - Developed and executed automated test scripts using Playwright, significantly reducing manual testing efforts and enhancing overall test coverage by 88%.",
+        " - Developed and executed automated test scripts using Playwright, significantly reducing manual testing efforts and enhancing overall test coverage by 68%.",
       point2:
-        " - Enhanced Quicktome's software quality and reliability as measured by a 30% decrease in bug reports from end-users, by implementing comprehensive automated tests using Playwright and Bruno test frameworks.",
-      point3: " - API tests using Bruno",
+        " - Integrated automated tests into the CI/CD pipeline, ensuring continuous quality assurance and quick identification of defects.",
+      point3:
+        " - Enhanced Quicktome's software quality and reliability as measured by a 30% decrease in bug reports from developers, by implementing comprehensive automated tests using Playwright test frameworks.",
+      point4:
+        " - Refactored legacy code to improve readability and maintainability, reducing technical debt by 20%.",
     },
     {
-      id: 2,
+      id: 3,
       experience: "Full Stack Developer",
       company: "Royal Bank of Canada",
       time: "Sept - Dec 2023",
@@ -39,7 +54,7 @@ const Experience = () => {
         " - Collaborated in cross-functional teams, utilizing Agile methodologies and Jira, to ensure streamlined project management.",
     },
     {
-      id: 3,
+      id: 4,
       experience: "Technical Systems Analyst",
       company: "Royal Bank of Canada",
       time: "Jan - Apr 2023",
