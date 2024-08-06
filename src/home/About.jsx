@@ -80,9 +80,9 @@ const About = () => {
             music. These days, I'm honing my skills with the guitar, a journey
             that truly resonates with my love for learning.
             <br />
-            To unwind and reconnect with myself, I cherish the simple joys of
+            To unwind and reconnect with myself, I relish in the simple joys of
             baking, early morning runs, quality time with loved ones, crocheting
-            and immersing in the serenity of nature.
+            and taking long walks in nature.
           </p>
 
           <br />
