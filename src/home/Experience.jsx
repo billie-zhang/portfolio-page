@@ -12,17 +12,33 @@ const Experience = () => {
     {
       id: 1,
       experience: "Software Engineer",
+      company: "Christians in Web3",
+      time: "June 2024 - Present",
+      project:
+        "Project: CW3 Community Database, a web application that serves as a comprehensive platform that allows CW3 members to share information about themselves and connect with other members who are nearby or have similar interests and skills",
+      point1:
+        " - Developed responsive web applications using React.js and TypeScript, ensuring alignment with design specifications and enhancing user experience through mobile-friendly interfaces.",
+      point2:
+        " - Designed and optimized advanced search and filtering capabilities, leveraging AppWrite for real-time queries while improving database performance and scalability to ensure efficient user matching.",
+      point3:
+        " - Built and integrated real-time communication systems, including in-app messaging and notifications, with customizable user preferences, enhancing engagement and providing seamless interactions.",
+    },
+    {
+      id: 2,
+      experience: "Software Engineering Manager",
       company: "Develop for Good",
       time: "June - Aug 2024",
       // project:
       //   "Project: Quicktome, a cloud-based tool built for brain health physicians that allows them to obtain visualization of clinically critical brain networks with automated mapping technology.",
       point1:
-        " - Translated designs into responsive web applications using react.js and node.js, ensuring alignment with design intent and ux goals.",
+        " - Led cross-functional client meetings, effectively communicating technical solutions, project milestones, and product updates to ensure alignment with business goals and address client feedback.",
       point2:
-        " - Developed and executed advanced scripts to automate the process of connecting members based on geographic location, mutual interests, and goals, leading to more targeted and effective networking opportunities.",
+        " - Increased project output by 35% by refining task allocation processes and streamlining communication, enabling quicker decision-making and faster completion of deliverables.",
+      point3:
+        " - Set up and managed the technical environment, including system migrations, while maintaining comprehensive documentation.",
     },
     {
-      id: 2,
+      id: 3,
       experience: "Quality Software Engineer",
       company: "Omniscient Neurotechnology",
       time: "May - Aug 2024",
@@ -38,7 +54,7 @@ const Experience = () => {
         " - Refactored legacy code to improve readability and maintainability, reducing technical debt by 20%.",
     },
     {
-      id: 3,
+      id: 4,
       experience: "Full Stack Developer",
       company: "Royal Bank of Canada",
       time: "Sept - Dec 2023",
@@ -54,7 +70,7 @@ const Experience = () => {
         " - Collaborated in cross-functional teams, utilizing Agile methodologies and Jira, to ensure streamlined project management.",
     },
     {
-      id: 4,
+      id: 5,
       experience: "Technical Systems Analyst",
       company: "Royal Bank of Canada",
       time: "Jan - Apr 2023",
