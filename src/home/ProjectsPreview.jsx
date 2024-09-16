@@ -17,6 +17,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      src: bzwebsite,
+      title: "First Things First",
+      desc: "Scheduling App with a focus on Quadrant 2.",
+      lang: "react.js, tailwind CSS, Figma",
+      // github: "https://github.com/billie-zhang/Seasonal",
+      // link: "https://seasonal-app.vercel.app/",
+    },
+    {
+      id: 2,
       src: seasonal,
       title: "Seasonal",
       desc: "An app that helps you pick the perfect fruits at the perfect time. Seasonal scans fruits and informs consumers on the fruit ripeness, seasonality, and recipe recommendations.",
@@ -25,7 +34,7 @@ const Projects = () => {
       link: "https://seasonal-app.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       src: bzwebsite,
       title: "Portfolio Website",
       desc: "A personal portfolio website showcasing my professional journey, skills, and accomplishments. The site serves as a comprehensive snapshot of my abilities.",
@@ -33,15 +42,15 @@ const Projects = () => {
       github: "https://github.com/billie-zhang/portfolio",
       link: "https://billiezhang.vercel.app/",
     },
-    {
-      id: 3,
-      src: eco,
-      title: "EcoThreads",
-      desc: "A website that displays an interactive Figma prototype of a fashion sustainability app and serves as a web preview for the app, built for HackTheGlobe.",
-      lang: "react.js, tailwind CSS, Figma",
-      github: "https://github.com/billie-zhang/EcoThreads",
-      link: "https://billie-zhang.github.io/EcoThreads/",
-    },
+    // {
+    //   id: 4,
+    //   src: eco,
+    //   title: "EcoThreads",
+    //   desc: "A website that displays an interactive Figma prototype of a fashion sustainability app and serves as a web preview for the app, built for HackTheGlobe.",
+    //   lang: "react.js, tailwind CSS, Figma",
+    //   github: "https://github.com/billie-zhang/EcoThreads",
+    //   link: "https://billie-zhang.github.io/EcoThreads/",
+    // },
     // {
     //   id: 4,
     //   src: bbl,

@@ -1,19 +1,23 @@
-import React from 'react';
-import Home from '../pages/Home.jsx';
-import AboutMe from '../pages/AboutMe.jsx';
-import FindEase from '../pages/FindEase.jsx';
-import { Routes, Route } from 'react-router-dom';
-import NoPage from '../pages/NoPage.jsx';
-import Projects from '../pages/Projects.jsx';
+import React from "react";
+import Home from "../pages/Home.jsx";
+import AboutMe from "../pages/AboutMe.jsx";
+import FindEase from "../pages/FindEase.jsx";
+import FirstThingsFirst from "../pages/FirstThingsFirst.jsx";
+import { Routes, Route } from "react-router-dom";
+import NoPage from "../pages/NoPage.jsx";
+import Projects from "../pages/Projects.jsx";
 
 const AnimRoutes = () => {
-    return <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/about' element={<AboutMe />} />
-        <Route path='/findease' element={<FindEase />} />
-        <Route path='*' element={<NoPage />} />
-    </Routes>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/about" element={<AboutMe />} />
+      <Route path="/findease" element={<FindEase />} />
+      <Route path="/first-things-first" element={<FirstThingsFirst />} />
+      <Route path="*" element={<NoPage />} />
+    </Routes>
+  );
 };
 
 export default AnimRoutes;
