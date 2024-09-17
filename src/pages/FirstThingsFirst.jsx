@@ -12,15 +12,44 @@ const FirstThingsFirst = () => {
             First Things First
           </h1>
         </div>
-        <div>
+        <div className="mb-4">
           <h2 className="font-signature text-2xl font-bold text-light-grey">
             Inspired by Stephen R. Covey's "7 Habits of Highly Effective People"
           </h2>
-          <h2 className="font-signature my-4 text-xl font-thin italic text-light-grey">
+          <p className="my-4 text-xl font-normal italic text-light-grey">
             "The key is not to prioritize what's on your schedule, but to
             schedule your priorities."
+          </p>
+        </div>
+        <div className="mb-4">
+          <h2 className="font-signature text-xl font-bold text-light-grey">
+            Quadrant II
           </h2>
-          <p></p>
+          <p className="my-3 text-l font-normal text-light-grey">
+            - Important, but not urgent; requires more initiative, more
+            proactivity <br />- building relationships, writing a personal
+            mission statement, long range goals
+          </p>
+        </div>
+        <div className="mb-4">
+          <h2 className="font-signature text-xl font-bold text-light-grey">
+            Important Components of a Quadrant II Planner
+          </h2>
+          <p className="my-3 text-l font-normal text-light-grey">
+            1. Coherence{" "}
+            <i> (unity of vision, mission statement, roles and goals)</i>
+            <br />
+            2. Balance <i>(career & growth; health & relationships)</i>
+            <br />
+            3. Quadrant II focus{" "}
+            <i>(career & growth; health & relationships)</i>
+            <br />
+            4. A "People" Dimension{" "}
+            <i>(career & growth; health & relationships)</i>
+            <br />
+            5. Flexibility <i>(career & growth; health & relationships)</i>
+            <br />
+          </p>
         </div>
       </div>
     </div>
