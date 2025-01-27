@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import hero from "../assets/me3.svg";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import resume from "../assets/BillieZhangResume.pdf";
 import AOS from "aos";
@@ -64,14 +64,14 @@ const Banner = () => {
             >
               Resume
             </a>
-            <Link
+            {/* <Link
               to="contact"
               smooth
               duration={2000}
               className="text-light-blue border border-light-blue w-fit px-6 py-3 my-3 flex items-center rounded-md transition ease-in-out duration-500 hover:text-white hover:bg-light-blue cursor-pointer"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
         </div>
 

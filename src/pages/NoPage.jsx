@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "../home/Contact";
+// import Contact from "../home/Contact";
 import { Link } from "react-router-dom";
 
 const NoPage = () => {
@@ -21,7 +21,7 @@ const NoPage = () => {
           Return to homepage
         </Link>
       </div>
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
